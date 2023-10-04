@@ -217,11 +217,11 @@ th {
 }
 
 /* ==========================================================================
-   Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
+   Start of base geekskare CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
 
 @font-face {
-  font-family: "webflow-icons";
+  font-family: "geekskare-icons";
   src: url("data:application/x-font-ttf;charset=utf-8;base64,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")
     format("truetype");
   font-weight: normal;
@@ -230,7 +230,7 @@ th {
 
 [class^="w-icon-"],
 [class*=" w-icon-"] {
-  font-family: "webflow-icons" !important;
+  font-family: "geekskare-icons" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -338,8 +338,8 @@ html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
 }
 
-.w-webflow-badge,
-.w-webflow-badge * {
+.w-geekskare-badge,
+.w-geekskare-badge * {
   position: static;
   left: auto;
   top: auto;
@@ -399,10 +399,10 @@ html[data-w-dynpage] [data-w-cloak] {
   word-wrap: normal;
 }
 
-.w-webflow-badge {
+.w-geekskare-badge {
   position: fixed !important;
   display: inline-block !important;
-  visibility: visible !important;
+  visibility: hidden !important;
   z-index: 2147483647 !important;
   top: auto !important;
   right: 12px !important;
@@ -426,9 +426,9 @@ html[data-w-dynpage] [data-w-cloak] {
   cursor: pointer;
 }
 
-.w-webflow-badge > img {
+.w-geekskare-badge > img {
   display: inline-block !important;
-  visibility: visible !important;
+  visibility: hidden !important;
   opacity: 1 !important;
   vertical-align: middle !important;
 }
@@ -2211,7 +2211,7 @@ textarea.w-select {
 }
 
 /* ==========================================================================
-   Start of custom Webflow CSS
+   Start of custom geekskare CSS
    ========================================================================== */
 
 .w-layout-grid {
@@ -2936,13 +2936,13 @@ figcaption {
       from(rgba(16, 57, 95, 0.5)),
       to(rgba(16, 57, 95, 0.5))
     ),
-    url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
+    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
   background-image: linear-gradient(
       180deg,
       rgba(16, 57, 95, 0.5),
       rgba(16, 57, 95, 0.5)
     ),
-    url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
+    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -5625,7 +5625,7 @@ figcaption {
 }
 
 .image.property {
-  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f323375c1689ca1f1ad61b0_blue-house.jpg");
+  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f323375c1689ca1f1ad61b0_blue-house.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5633,7 +5633,7 @@ figcaption {
 
 .image.right {
   width: 150%;
-  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b468cc4d72a6d73b3be78_landing-1-hero.jpg");
+  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b468cc4d72a6d73b3be78_landing-1-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5641,14 +5641,14 @@ figcaption {
 
 .image.left {
   width: 150%;
-  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
+  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .image.person {
-  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b57af3039a18452518e66_house-image.jpg");
+  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12416,7 +12416,7 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 3;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
   }
   #w-node-_8519be40-20ab-0a30-1e3f-116803381b26-305ac12f {
@@ -12428,12 +12428,12 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 3;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
   }
   #w-node-_8519be40-20ab-0a30-1e3f-116803381b2a-305ac12f {
     -ms-grid-row: 3;
-  grid-row: 3;
+    grid-row: 3;
     grid-row-start: 3;
     -ms-grid-row-span: 1;
     grid-row-end: 4;
@@ -12616,42 +12616,42 @@ figcaption {
   }
   #w-node-_0db9743c-a6a7-2356-5b8c-52e688efa0ce-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   #w-node-_9af97ee9-f8a6-acd9-b41a-00e5e62568d7-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   #w-node-c2500909-7451-4992-ac22-14c08a0a1950-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   #w-node-c5d9cf07-ebee-a423-0410-755a3fd6aae7-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   #w-node-b0683b76-e421-21fa-4fd8-16bd7f793f47-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
   }
   #w-node-_9a6e58e1-b7a7-cdd8-5109-40fd964e74eb-8d5ac1cf {
     -ms-grid-row: span 2;
-  grid-row: span 2;
+    grid-row: span 2;
     grid-row-start: span 2;
     -ms-grid-row-span: 2;
     grid-row-end: span 2;
@@ -12663,7 +12663,7 @@ figcaption {
     -ms-grid-column-span: 1;
     grid-column-end: 2;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
     -ms-grid-row-span: 1;
     grid-row-end: 3;
@@ -12782,7 +12782,7 @@ figcaption {
     -ms-grid-column-span: 4;
     grid-column-end: 5;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
     -ms-grid-row-span: 1;
     grid-row-end: 3;
@@ -12791,7 +12791,7 @@ figcaption {
   }
   #w-node-_8519be40-20ab-0a30-1e3f-116803381b22-305ac12f {
     -ms-grid-row: 3;
-  grid-row: 3;
+    grid-row: 3;
     grid-row-start: 3;
     -ms-grid-row-span: 1;
     grid-row-end: 4;
@@ -12805,7 +12805,7 @@ figcaption {
   }
   #w-node-_8519be40-20ab-0a30-1e3f-116803381b26-305ac12f {
     -ms-grid-row: 4;
-  grid-row: 4;
+    grid-row: 4;
     grid-row-start: 4;
     -ms-grid-row-span: 1;
     grid-row-end: 5;
@@ -12819,7 +12819,7 @@ figcaption {
   }
   #w-node-_8519be40-20ab-0a30-1e3f-116803381b2a-305ac12f {
     -ms-grid-row: 5;
-  grid-row: 5;
+    grid-row: 5;
     grid-row-start: 5;
     -ms-grid-row-span: 1;
     grid-row-end: 6;
@@ -12888,7 +12888,7 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 3;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
   }
   #w-node-_7d4b1765-0e72-9b3c-639e-ba9ae6e9ce8d-205ac143 {
@@ -13031,7 +13031,7 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 3;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
   }
   #email-2.w-node-c526041b-bf48-cbf3-a188-a2a830ede58c-435ac1ce {
@@ -13172,7 +13172,7 @@ figcaption {
     -ms-grid-row-span: 1;
     grid-row-end: 3;
     -ms-grid-row: 2;
-  grid-row: 2;
+    grid-row: 2;
     grid-row-start: 2;
   }
   #w-node-c79d1ed1-820f-83dc-b2f5-5b1531798c44-e85ac1d4 {

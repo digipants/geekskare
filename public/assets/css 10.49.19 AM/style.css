@@ -2936,13 +2936,13 @@ figcaption {
       from(rgba(16, 57, 95, 0.5)),
       to(rgba(16, 57, 95, 0.5))
     ),
-    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
+    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
   background-image: linear-gradient(
       180deg,
       rgba(16, 57, 95, 0.5),
       rgba(16, 57, 95, 0.5)
     ),
-    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
+    url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -5625,7 +5625,7 @@ figcaption {
 }
 
 .image.property {
-  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f323375c1689ca1f1ad61b0_blue-house.jpg");
+  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f323375c1689ca1f1ad61b0_blue-house.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5633,7 +5633,7 @@ figcaption {
 
 .image.right {
   width: 150%;
-  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b468cc4d72a6d73b3be78_landing-1-hero.jpg");
+  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b468cc4d72a6d73b3be78_landing-1-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5641,14 +5641,14 @@ figcaption {
 
 .image.left {
   width: 150%;
-  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
+  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f32337271be6f99e2d77c02_landing-5-hero.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .image.person {
-  background-image: url("/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b5c3ecd06f91066ba1052_landing-5-hero.jpg");
+  background-image: url("https://geekskare.com/assets/images/5ec7b8b73fc8c062b94b9c7b/5f5b57af3039a18452518e66_house-image.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
