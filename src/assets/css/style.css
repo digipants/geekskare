@@ -1012,9 +1012,19 @@ textarea.w-select {
   .w-col-small-12 {
     width: 100%;
   }
+  img {
+    display: inline-block;
+    max-width: 40% !important;
+    border-radius: 3px;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  img {
+    display: inline-block;
+    max-width: 50% !important;
+    border-radius: 3px;
+  }
   .w-container {
     max-width: none;
   }
