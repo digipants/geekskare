@@ -3,283 +3,20 @@
     data-lt-installed="true">
 
 <head>
-    <style>
-        .LGLeeN-keyboard-shortcuts-view {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: flex
-        }
-
-        .LGLeeN-keyboard-shortcuts-view table,
-        .LGLeeN-keyboard-shortcuts-view tbody,
-        .LGLeeN-keyboard-shortcuts-view td,
-        .LGLeeN-keyboard-shortcuts-view tr {
-            background: inherit;
-            border: none;
-            margin: 0;
-            padding: 0
-        }
-
-        .LGLeeN-keyboard-shortcuts-view table {
-            display: table
-        }
-
-        .LGLeeN-keyboard-shortcuts-view tr {
-            display: table-row
-        }
-
-        .LGLeeN-keyboard-shortcuts-view td {
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            display: table-cell;
-            color: #000;
-            padding: 6px;
-            vertical-align: middle;
-            white-space: nowrap
-        }
-
-        .LGLeeN-keyboard-shortcuts-view td:first-child {
-            text-align: end
-        }
-
-        .LGLeeN-keyboard-shortcuts-view td kbd {
-            background-color: #e8eaed;
-            border-radius: 2px;
-            border: none;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            color: inherit;
-            display: inline-block;
-            font-family: Google Sans Text, Roboto, Arial, sans-serif;
-            line-height: 16px;
-            margin: 0 2px;
-            min-height: 20px;
-            min-width: 20px;
-            padding: 2px 4px;
-            position: relative;
-            text-align: center
-        }
-    </style>
-    <style>
-        .gm-control-active>img {
-            -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-            display: none;
-            left: 50%;
-            pointer-events: none;
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%)
-        }
-
-        .gm-control-active>img:nth-child(1) {
-            display: block
-        }
-
-        .gm-control-active:focus>img:nth-child(1),
-        .gm-control-active:hover>img:nth-child(1),
-        .gm-control-active:active>img:nth-child(1),
-        .gm-control-active:disabled>img:nth-child(1) {
-            display: none
-        }
-
-        .gm-control-active:focus>img:nth-child(2),
-        .gm-control-active:hover>img:nth-child(2) {
-            display: block
-        }
-
-        .gm-control-active:active>img:nth-child(3) {
-            display: block
-        }
-
-        .gm-control-active:disabled>img:nth-child(4) {
-            display: block
-        }
-
-        sentinel {}
-    </style>
-    <link type="text/css" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&amp;lang=en">
-    <link type="text/css" rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;lang=en">
-    <style>
-        .gm-ui-hover-effect {
-            opacity: .6
-        }
-
-        .gm-ui-hover-effect:hover {
-            opacity: 1
-        }
-
-        .gm-ui-hover-effect>span {
-            background-color: #000
-        }
-
-        @media (forced-colors:active),
-        (prefers-contrast:more) {
-            .gm-ui-hover-effect>span {
-                background-color: ButtonText
-            }
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-cc button,
-        .gm-style .gm-style-cc span,
-        .gm-style .gm-style-mtc div {
-            font-size: 10px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box
-        }
-
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-cc button,
-        .gm-style .gm-style-cc span {
-            outline-offset: 3px
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        @media print {
-
-            .gm-style .gmnoprint,
-            .gmnoprint {
-                display: none
-            }
-        }
-
-        @media screen {
-
-            .gm-style .gmnoscreen,
-            .gmnoscreen {
-                display: none
-            }
-        }
-    </style>
-    <style>
-        .dismissButton {
-            background-color: #fff;
-            border: 1px solid #dadce0;
-            color: #1a73e8;
-            border-radius: 4px;
-            font-family: Roboto, sans-serif;
-            font-size: 14px;
-            height: 36px;
-            cursor: pointer;
-            padding: 0 24px
-        }
-
-        .dismissButton:hover {
-            background-color: rgba(66, 133, 244, .04);
-            border: 1px solid #d2e3fc
-        }
-
-        .dismissButton:focus {
-            background-color: rgba(66, 133, 244, .12);
-            border: 1px solid #d2e3fc;
-            outline: 0
-        }
-
-        .dismissButton:focus:not(:focus-visible) {
-            background-color: #fff;
-            border: 1px solid #dadce0;
-            outline: none
-        }
-
-        .dismissButton:focus-visible {
-            background-color: rgba(66, 133, 244, .12);
-            border: 1px solid #d2e3fc;
-            outline: 0
-        }
-
-        .dismissButton:hover:focus {
-            background-color: rgba(66, 133, 244, .16);
-            border: 1px solid #d2e2fd
-        }
-
-        .dismissButton:hover:focus:not(:focus-visible) {
-            background-color: rgba(66, 133, 244, .04);
-            border: 1px solid #d2e3fc
-        }
-
-        .dismissButton:hover:focus-visible {
-            background-color: rgba(66, 133, 244, .16);
-            border: 1px solid #d2e2fd
-        }
-
-        .dismissButton:active {
-            background-color: rgba(66, 133, 244, .16);
-            border: 1px solid #d2e2fd;
-            -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
-            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15)
-        }
-
-        .dismissButton:disabled {
-            background-color: #fff;
-            border: 1px solid #f1f3f4;
-            color: #3c4043
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        .gm-style-moc {
-            background-color: rgba(0, 0, 0, .45);
-            pointer-events: none;
-            text-align: center;
-            -webkit-transition: opacity ease-in-out;
-            -o-transition: opacity ease-in-out;
-            transition: opacity ease-in-out
-        }
-
-        .gm-style-mot {
-            color: white;
-            font-family: Roboto, Arial, sans-serif;
-            font-size: 22px;
-            margin: 0;
-            position: relative;
-            top: 50%;
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%)
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        .gm-style img {
-            max-width: none;
-        }
-
-        .gm-style {
-            font: 400 11px Roboto, Arial, sans-serif;
-            text-decoration: none;
-        }
-    </style>
     <meta charset="utf-8">
-    <title>Contact Page 1 - GeeksKare Protection, One stop solution for all your devices</title>
+    <title>Contact - GeeksKare Protection, One stop solution for all your devices</title>
     <meta
-        content="Scale your small business. With HandyUI template, you’ll be able to launch your small business website in hours and get advantage over your competitors"
+        content="Guard Your Devices with the Expertise of Trusted Professionals at GeeksKare, Make an Appointment and Access Never-ending Support for Your Devices"
         name="description">
-    <meta content="Contact Page 1 - GeeksKare Protection, One stop solution for all your devices" property="og:title">
+    <meta content="Contact - GeeksKare Protection, One stop solution for all your devices" property="og:title">
     <meta
-        content="Scale your small business. With HandyUI template, you’ll be able to launch your small business website in hours and get advantage over your competitors"
+        content="Guard Your Devices with the Expertise of Trusted Professionals at GeeksKare, Make an Appointment and Access Never-ending Support for Your Devices"
         property="og:description">
     <meta content="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5f3f6b3831fd612f7bd99661_handyui-hero.jpg"
         property="og:image">
-    <meta content="Contact Page 1 - GeeksKare Protection, One stop solution for all your devices"
-        property="twitter:title">
+    <meta content="Contact - GeeksKare Protection, One stop solution for all your devices" property="twitter:title">
     <meta
-        content="Scale your small business. With HandyUI template, you’ll be able to launch your small business website in hours and get advantage over your competitors"
+        content="Guard Your Devices with the Expertise of Trusted Professionals at GeeksKare, Make an Appointment and Access Never-ending Support for Your Devices"
         property="twitter:description">
     <meta content="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5f3f6b3831fd612f7bd99661_handyui-hero.jpg"
         property="twitter:image">
@@ -322,48 +59,15 @@
             <div class="navbar-div"><a href="/" class="logo w-nav-brand" aria-label="home"><img
                         src="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5ed0ae5052f4f4bf2833b8a8_handyui-logo.svg"
                         alt=""></a>
-                <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="nav-link w-nav-link">Home</a>
-                    <div data-hover="1" data-delay="0" class="w-dropdown" style="">
-                        <div class="nav-dropdown w-dropdown-toggle" id="w-dropdown-toggle-0"
-                            aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div>All Variants</div><img
-                                src="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5ed0b00d11a8b07c5d08d35c_dropdown-icon.svg"
-                                alt="" class="menu-dropdown-icon">
-                        </div>
-                        <nav class="dropdown-list w-dropdown-list" id="w-dropdown-list-0"
-                            aria-labelledby="w-dropdown-toggle-0"><a href="/landing-pages/landing-page-1"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Landing Page 1</a><a
-                                href="/landing-pages/landing-page-2" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Landing Page 2</a><a href="/landing-pages/landing-page-3"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Landing Page 3</a><a
-                                href="/landing-pages/landing-page-4" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Landing Page 4</a><a href="/landing-pages/landing-page-5"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Landing Page 5</a></nav>
-                    </div><a href="https://geekskare.com/#components" class="nav-link w-nav-link">Elements</a>
-                    <div data-hover="1" data-delay="0" class="w-dropdown" style="">
-                        <div class="nav-dropdown w-dropdown-toggle" id="w-dropdown-toggle-1"
-                            aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button"
-                            tabindex="0">
-                            <div>Pages</div><img
-                                src="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5ed0b00d11a8b07c5d08d35c_dropdown-icon.svg"
-                                alt="" class="menu-dropdown-icon">
-                        </div>
-                        <nav class="dropdown-list w-dropdown-list" id="w-dropdown-list-1"
-                            aria-labelledby="w-dropdown-toggle-1"><a href="/inner-pages/contact-page-1"
-                                aria-current="page" class="dropdown-link w-dropdown-link w--current"
-                                tabindex="0">Contact</a><a href="/inner-pages/pricing-page-1"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Pricing</a><a
-                                href="/inner-pages/about-us" class="dropdown-link w-dropdown-link" tabindex="0">About
-                                Us</a><a href="/inner-pages/blog-page-1" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Blog</a><a href="/inner-pages/services"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Services</a><a
-                                href="/inner-pages/projects" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Projects</a></nav>
-                    </div>
-                </nav><a href="/inner-pages/contact-page-2" class="button nav w-button">Free Quote</a>
-                <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button"
-                    tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><img
+                <nav role="navigation" class="nav-menu w-nav-menu">
+                    <a href="/" class="nav-link w-nav-link">Home</a>
+                    <a href="/about-us" class="nav-link w-nav-link">About Us</a>
+                    <a href="/services" class="nav-link w-nav-link">Services</a>
+                    <a href="/contact" class="nav-link w-nav-link">Contact</a>
+                </nav>
+                <a href="/contact" class="button nav w-button">Free Quote</a>
+                <div class="menu-button w-nav-button" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0"
+                    aria-haspopup="menu" aria-expanded="false"><img
                         src="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5f4019bda5d46a6be82bc0a3_menu-icon.svg"
                         loading="lazy" alt="" class="menu-image"></div>
             </div>
@@ -1018,19 +722,18 @@
                     <div class="footer-rating"><img
                             src="https://assets.website-files.com/5ec7b8b73fc8c062b94b9c7b/5f32332b5ed186907ffaf6b8_5star.svg"
                             alt="">
-                        <div class="five-star-rating">Five star rated company</div><a href="/inner-pages/pricing-page-1"
+                        <div class="five-star-rating">Five star rated company</div><a href="/pricing-page-1"
                             class="see-reviews">See reviews</a>
                     </div>
                 </div>
                 <div class="w-layout-grid footer-link-grid">
                     <div><a href="/" class="footer-link">Home</a><a href="https://geekskare.com/#landing"
-                            class="footer-link">All Variants</a><a href="/inner-pages/projects"
-                            class="footer-link">Projects</a><a href="/inner-pages/blog-page-1"
-                            class="footer-link">Blog</a><a href="/inner-pages/pricing-page-1"
+                            class="footer-link">All Variants</a><a href="/projects" class="footer-link">Projects</a><a
+                            href="/blog-page-1" class="footer-link">Blog</a><a href="/pricing-page-1"
                             class="footer-link">Pricing</a></div>
-                    <div><a href="/inner-pages/services" class="footer-link">Services</a><a href="/inner-pages/about-us"
+                    <div><a href="/services" class="footer-link">Services</a><a href="/about-us"
                             class="footer-link">About Us</a><a href="/elements/career-elements"
-                            class="footer-link">Careers</a><a href="/inner-pages/contact-page-1" aria-current="page"
+                            class="footer-link">Careers</a><a href="/contact" aria-current="page"
                             class="footer-link w--current">Contact Us</a></div>
                     <div><a href="/utility/licenses" class="footer-link">Licenses</a><a href="/utility/styleguides"
                             class="footer-link">Styleguides</a><a href="/utility/changelog"
